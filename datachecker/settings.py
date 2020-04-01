@@ -19,7 +19,7 @@ NEWSPIDER_MODULE = 'datachecker.spiders'
 #USER_AGENT = 'datachecker (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -58,9 +58,14 @@ ROBOTSTXT_OBEY = True
 
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
-#EXTENSIONS = {
-#    'scrapy.extensions.telnet.TelnetConsole': None,
-#}
+EXTENSIONS = {
+   'datachecker.extensions.EmailOnChange' :500,
+}
+
+EMAIL_ON_CHANGE_ENABLED = True
+EMAIL_ON_CHANGE_DESTINATION = 'user@example.com'
+
+MAIL_PORT = 8025
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html

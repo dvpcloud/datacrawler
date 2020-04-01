@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "750280222510a8eeea42255bf84dee51dce5a8290efc5bc5da6052a81d754a13"
+            "sha256": "c0b964873e720a9f8b72ef840fcabadd7634b452d92cf69f1709d5cd3855fc44"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -322,12 +322,25 @@
         }
     },
     "develop": {
+        "aiosmtpd": {
+            "hashes": [
+                "sha256:b7ea7ee663f3b8514d3224d55c4e8827148277b124ea862a0bbfca1bc899aef5"
+            ],
+            "index": "pypi",
+            "version": "==1.2"
+        },
         "astroid": {
             "hashes": [
                 "sha256:71ea07f44df9568a75d0f354c49143a4575d90645e9fead6dfb52c26a85ed13a",
                 "sha256:840947ebfa8b58f318d42301cf8c0a20fd794a33b61cc4638e28e9e61ba32f42"
             ],
             "version": "==2.3.3"
+        },
+        "atpublic": {
+            "hashes": [
+                "sha256:7dca670499e9a9d3aae5a8914bc799475fe24be3bcd29c8129642dda665f7a44"
+            ],
+            "version": "==1.0"
         },
         "isort": {
             "hashes": [
